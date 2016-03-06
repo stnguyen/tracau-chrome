@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+
+  "name": "Tracau for Chrome",
+  "description": "Quickly search for meaning of English -> Vietnamese and Vietnamese -> English sentences",
+  "version": "1.0",
+
+  "background": {
+    "scripts": ["background_script.js"]
+  },
+
+  "content_scripts": [{
+    "matches": ["http://*/*", "https://*/*"],
+    "js": ["content_script.js"],
+    "css": ["content_style.css"]
+  }],
+
+  "icons": {
+    "16": "icon-bitty.png",
+    "48": "icon-small.png",
+    "128": "icon-large.png"
+  },
+
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "permissions": [
+    "tabs",
+    "contextMenus",
+    "https://ajax.googleapis.com/"
+  ]
+}

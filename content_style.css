@@ -1,0 +1,36 @@
+#tracau-dialog {
+  background: #FFF;
+  width: 400px;
+  height: 600px;
+  overflow: scroll;
+  padding: 1.5em;
+  margin: 1em auto;
+  border: 0;
+  border-top: 5px solid #69c773;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.8);
+
+  position: fixed;
+  top: 10px;
+
+  text-align: left;
+}
+
+#tracau-dialog p {
+  margin:.2em 0;
+}
+
+#tracau-dialog section div {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+#tracau-dialog .sentence-main {
+  color:#3b5998;
+}
+
+#tracau-dialog .sentence-secondary {
+  color:#333;
+}
+
+#tracau-dialog em {
+  font-weight: bold;
+}
